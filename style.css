@@ -1,0 +1,245 @@
+/* universal silector  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+
+}
+
+body {
+    background-color: #1f242d;
+    color: white;
+}
+
+header .container .main_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header .container .main_header .logo {
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+header .container .main_header .nav_var a {
+    display: inline-block;
+    color: white;
+    padding-left: 35px;
+    font-size: 18px;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+
+}
+
+/* hover section  */
+header .container .main_header .nav_var a:hover,
+header .container .main_header .nav_var a.active {
+    color: #0ef;
+}
+
+/* banner section  */
+.main_banner .container .content {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_banner .container .content .home-content {
+    max-width: 600px;
+}
+
+.main_banner .container .content .home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    padding-bottom: 8px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+    
+}
+
+.main_banner .container .content .home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 8px;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .5s;
+}
+
+.main_banner .container .content .home-content h3:nth-of-type(2){
+    margin-bottom: 15px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .5s;
+}
+
+.main_banner .container .content .home-content h3 span{
+    color: #0ef;
+}
+.main_banner .container .content .home-content p {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+    
+}
+
+.main_banner .container .content .my_photo img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 1px solid rgb(250, 38, 0);
+    box-shadow: 3px 5px 18px rgb(250, 38, 0);
+    opacity: 0;
+    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 1s, 3s;
+}
+
+/* social icon  */
+
+.main_banner .container .content .social_icon {
+    margin-top: 20px;
+}
+.main_banner .container .content .social_icon a{
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+.main_banner .container .content .social_icon a i {
+    font-size: 30px;
+    color: white;
+    margin-right: 15px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    transition: .5s ease;
+   
+}
+
+.main_banner .container .content .social_icon a:first-child i:hover {
+    background-color: #044dec;
+    box-shadow: 0 0 20px #044dec;
+}
+
+.main_banner .container .content .social_icon a:nth-child(2) i:hover {
+    background-color: #0077B5;
+    box-shadow: 0 0 20px #0077B5;
+}
+
+.main_banner .container .content .social_icon a:nth-child(3) i:hover {
+    background-color: #171515;
+    box-shadow: 0 0 20px #1DA1F2;
+}
+
+.main_banner .container .content .social_icon a:nth-child(4) i:hover {
+    background: linear-gradient(45deg,
+            #515BD4,
+            #8134AF,
+            #DD2A7B,
+            #F58529,
+            #FEDA77);
+    box-shadow: 0 0 20px #DD2A7B;
+}
+
+.main_banner .container .content .social_icon a:nth-child(5) i:hover {
+    background-color: #1DA1F2;
+    box-shadow: 0 0 20px #1DA1F2;
+}
+
+.main_banner .container .content .btn-1 {
+    display: inline-block;
+    padding: 10px 28px;
+    background-color: #0ef;
+    color: black;
+    border-radius: 40px;
+    font-size: 20px;
+    box-shadow: 0 0 10px #0ef;
+    font-weight: 600;
+    margin-top: 30px;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .9s;
+}
+
+/* KEYFREMS ANIMATION */
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideLeft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes zoomIn {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes floatImage {
+    0%{
+       transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-24px);
+    }
+    100%{
+       transform: translateY(0);
+    }
+}
