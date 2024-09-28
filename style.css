@@ -15,8 +15,10 @@
 }
 
 html {
-    scroll-behavior: smooth;
+   scroll-behavior: smooth;
+
 }
+
 
 :root {
     --bg-color: #1f242d;
@@ -39,13 +41,20 @@ a {
 body {
     background-color: #1f242d;
     color: white;
+    position: relative;
 }
 
 header {
-    background-color: #2C3E50;
     position: fixed;
     width: 100%;
+    
     z-index: 9999;
+
+}
+
+header.ariful{
+    background-color: #0359b0;
+
 }
 
 header .container .main_header {
@@ -65,9 +74,12 @@ header .container .main_header .logo {
     opacity: 0;
     animation: slideRight 1s ease forwards;
 }
-
-header .container .main_header .nav_var a {
+header .container .main_header .nav_var li{
     display: inline-block;
+}
+header .container .main_header .nav_var li a {
+    display: inline-block; 
+    position: relative;
     color: white;
     padding-left: 35px;
     font-size: 18px;
@@ -77,9 +89,9 @@ header .container .main_header .nav_var a {
 }
 
 /* hover section  */
-header .container .main_header .nav_var a:hover,
-header .container .main_header .nav_var a.active {
-    color: #0ef;
+header .container .main_header .nav_var li a:hover,
+header .container .main_header .nav_var li a.active {
+    color: #04ff00;
 }
 
 /* banner section  */
@@ -122,7 +134,7 @@ header .container .main_header .nav_var a.active {
 
 }
 
-.main_banner .container .content .home-content h3 span {
+.main_banner .container .content .home-content h3:nth-of-type(2) span {
     color: #0ef;
 }
 
@@ -907,7 +919,24 @@ footer .bottom_footer{
 }
 
 
+.dispaly_icon .icon{
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    z-index: 1;
 
+}
+.dispaly_icon .icon a{
+padding: 5px 10px;
+
+}
+.dispaly_icon .icon a i{
+color: white;
+font-size: 50px;
+background-color: rgb(131, 3, 3);
+border-radius: 10px;
+
+}
 
 
 

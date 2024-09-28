@@ -30,21 +30,21 @@
             <div class="main_header">
                 <a href="#" class="logo">Portfolio.</a>
                 <!-- nav var  item-->
-                <div class="nav_var">
-                    <a href="#home" style="--i:1;" class="active">HOME</a>
-                    <a href="#about-1" style="--i:2;">ABOUT</a>
-                    <a href="#education" style="--i:3;">Education</a>
-                    <a href="#skills" style="--i:4;">Skills</a>
-                    <a href="#latast-project" style="--i:4;">Latast project</a>
-                    <a href="#testomonial" style="--i:5;">TESTIMONIAL</a>
-                    <a href="#contact" style="--i:5;">CONTACT</a>
-                </div>
+                <nav class="nav_var">
+                   <li><a href="#home" style="--i:1;">HOME</a></li>
+                  <li><a href="#about-1" style="--i:2;">ABOUT</a></li>
+                    <li><a href="#education" style="--i:3;">Education</a></li>
+                   <li><a href="#skills" style="--i:4;">Skills</a></li>
+                   <li><a href="#latast-project" style="--i:4;">Latast project</a></li>
+                   <li><a href="#testomonial" style="--i:5;">TESTIMONIAL</a></li>
+                    <li><a href="#contact" style="--i:5;">CONTACT</a></li>
+                </nav>
             </div>
         </div>
     </header>
 
     <!-- banner section start  -->
-    <div class="main_banner" id="home">
+    <section class="main_banner" id="home">
         <div class="container">
             <div class="content">
                 <div class="home-content">
@@ -72,7 +72,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- About me section  -->
     <section class="about" id="about-1">
@@ -482,13 +482,16 @@
                </div>
             </div>
         </div>
+        <div class="dispaly_icon">
+            <div class="icon">
+                <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+            </div>
+        </div>
     </footer>
-
-
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="js.js"></script>
+    
     <script>
         $('#slider').owlCarousel({
             loop: true,
@@ -509,9 +512,8 @@
         })
     </script>
 
-
-
-
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="script.js"></script>
 </body>
 
 </html>
