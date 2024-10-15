@@ -1,0 +1,319 @@
+@media (max-width: 1200px){
+    /* banner section design start  */
+    .main_banner .container .content .my_photo img {
+        width: 350px;
+        height: 350px;
+     
+    }
+    .main_banner .container .content {
+        height: 750px;
+        padding-top: 154px;
+    }
+}
+
+
+@media (max-width: 1024px){
+
+    /* header section design start  */
+    header .container .main_header .nav_var li a {
+        padding-left: 35px;
+        font-size: 15px;
+
+    }
+       /* banner section design start  */
+
+       .main_banner .container .content .home-content h1 {
+        font-size: 50px;
+    }
+
+    .main_banner .container .content .my_photo img {
+        width: 290px;
+        height: 290px;
+    }
+
+    .main_banner .container .content {
+        height: 680px;
+        padding-top: 154px;
+    }
+    /* education section design start  */
+    .education .container .education_row .education_column .education_box .education_content .content h3 {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+     /* about section design start  */
+     .about .container .main_about .left_side img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about .container .main_about .left_side .circle {
+        top: -22%;
+        width: 240px;
+        height: 240px;
+    }
+    .about .container .main_about {
+        gap: 61px;
+
+    }
+}
+
+@media (min-width:924px) and (max-width: 991px) {
+    /* banner section design start  */
+
+    .main_banner .container .content .home-content h1 {
+        font-size: 50px;
+    }
+
+    .main_banner .container .content .my_photo img {
+        width: 250px;
+        height: 250px;
+    }
+
+    /* about section design start  */
+    .about .container .main_about .left_side img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about .container .main_about .left_side .circle {
+        top: -29%;
+        width: 240px;
+        height: 240px;
+    }
+
+    .about .container .main_about {
+        gap: 61px;
+
+    }
+
+    .about .container .main_about .right_side .btn-2 {
+        margin: 0;
+    }
+      /* education section design start  */
+      .education .container .education_row .education_column .education_box .education_content .content .year {
+        font-size: 1.1rem;
+
+    }
+    .education .container .education_row .education_column .education_box .education_content .content h3 {
+        font-size: 17px;
+        font-weight: 700;
+    }
+     
+    /* latast work section design start  */
+    .latast-project .container .main_gallary {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 924px) {
+    /* banner section design start  */
+
+    .main_banner .container .content .home-content h1 {
+        font-size: 45px;
+
+    }
+
+    .main_banner .container .content .home-content h3 {
+        font-size: 29px;
+    }
+
+    .main_banner .container .content .my_photo img {
+        width: 250px;
+        height: 249px;
+    }
+
+    /* about section design  */
+    .about .container .main_about .left_side img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about .container .main_about .left_side .circle {
+        top: -14%;
+        width: 240px;
+        height: 240px;
+    }
+
+    .about .container .main_about {
+        gap: 61px;
+
+    }
+    /* education section design start  */
+    .education .container .education_row .education_column .education_box .education_content .content .year {
+        font-size: 1.1rem;
+
+    }
+    .education .container .education_row .education_column .education_box .education_content .content h3 {
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    /* latast work section design start  */
+    .latast-project .container .main_gallary {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* banner section design start  */
+    .main_banner .container .content .home-content h1 {
+        font-size: 42px;
+    }
+
+    .main_banner .container .content .home-content h3 {
+        font-size: 29px;
+    }
+
+    .main_banner .container .content {}
+
+    .main_banner .container .content .my_photo {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .main_banner .container .content .my_photo img {
+        display: none;
+    }
+
+    .main_banner .container .content .social_icon a i {
+        font-size: 30px;
+
+    }
+
+    .main_banner .container .content {
+        height: 640px;
+        align-content: center;
+        padding-top: 171px;
+    }
+
+    /* about section design start  */
+    .about .hading h2 {
+        margin-top: 20px;
+    }
+
+    .about .container .main_about {
+        display: block;
+
+    }
+
+    .about .container .main_about .left_side img {
+        width: 200px;
+        height: 200px;
+
+    }
+
+    .about .container .main_about .left_side .circle {
+        top: -66%;
+        left: 50%;
+        width: 230px;
+        height: 230px;
+    }
+    .about .container .main_about .right_side .btn-2 {
+        font-size: 18px;
+        margin-top: -16px;
+  
+    }
+
+
+    /* education section design start  */
+    .education .container .education_row {
+        display: block;
+    }
+    .education .container .education_row .education_column .education_box .education_content .content h3 {
+        font-size: 1.5rem;
+    }
+
+
+    /* latast work section design start  */
+    .latast-project .container .main_gallary {
+        display: block;
+    }
+    .latast-project .container .main_gallary .item-1 {
+        margin-bottom: 25px;
+    }
+
+    /* contact form section design start  */
+
+    .main_contact {
+        height: 70vh;
+    }
+
+    /* footer section design start  */
+    .main_footer .container .footer{
+        display: block;
+    }
+    .main_footer .container .footer .box-1{
+        margin-bottom: 30px;
+    }
+    .main_footer .container .footer .box-3{
+        margin-top: 30px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    /* banner section design start  */
+    .main_banner .container .content .home-content h3 {
+        font-size: 22px;
+    }
+
+    .main_banner .container .content .btn-1 {
+        font-size: 15px;
+    }
+
+    .main_banner .container .content .social_icon a i {
+        font-size: 25px;
+
+    }
+
+    /* education  secrion design  */
+    .education .container .education_row .education_column .education_box .education_content .content h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    /* skills section design start  */
+    .skills .container .skills_row .skills_column .skills_box .skills_content .progres h3 {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+@media (max-width: 400px) {
+    .main_banner .container .content .home-content h1 {
+        font-size: 30px;
+    }
+
+    .main_banner .container .content .home-content h3 {
+        font-size: 20px;
+    }
+
+    .main_banner .container .content .social_icon a i {
+        font-size: 25px;
+
+    }
+    /* eucation section design start  */
+    .education .container .education_row .education_column .education_box .education_content .content h3 {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 360px) {
+    .main_banner .container .content .home-content h1 {
+        font-size: 30px;
+
+    }
+
+    .main_banner .container .content .home-content h3 {
+        font-size: 18px;
+    }
+
+    .main_banner .container .content .social_icon a i {
+        font-size: 14px;
+
+    }
+}

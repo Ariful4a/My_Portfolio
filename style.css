@@ -275,30 +275,30 @@ header .container .main_header .nav_var li a.active {
     justify-content: center;
     border-radius: 50%;
 }
-
 .about .container .main_about .left_side .circle {
-    position: absolute;
-    top: -46%;
-    left: 50%;
-    transform: translate(-50%, 50%) rotate(0);
-    width: 86%;
-    height: 92%;
-    border-top: .2rem solid var(--bg-color);
-    border-bottom: .2rem solid var(--bg-color);
-    border-left: .2rem solid #44ff00;
-    border-right: .2rem solid #33ff00;
-    border-radius: 50%;
+	position: absolute;
+	top: -56%;
+	left: 50%;
+	transform: translate(-50%, 50%) rotate(0);
+	width: 330px;
+	height: 330px;
+	border-top: .2rem solid var(--bg-color);
+	border-bottom: .2rem solid var(--bg-color);
+	border-left: .2rem solid #44ff00;
+	border-right: .2rem solid #33ff00;
+	border-radius: 50%;
+	animation: aboutSpinner 8s linear infinite;
 }
 
 .about .container .main_about .left_side img {
-    width: 70%;
-    height: 80%;
-    border-radius: 50%;
-    border: 2px solid rgb(0, 255, 4);
-    box-shadow: 0 0 15px red;
-    opacity: 0;
-    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
-    animation-delay: 1s, 3s;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	border: 2px solid rgb(0, 255, 4);
+	box-shadow: 0 0 15px red;
+	/* opacity: 0; */
+	/* animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite; */
+	/* animation-delay: 1s, 3s; */
 }
 
 .about .container .main_about .right_side {
@@ -1033,5 +1033,11 @@ border-radius: 10px;
 
     100% {
         transform: translateY(0);
+    }
+}
+
+@keyframes aboutSpinner{
+    100%{
+        transform: translate(-50%, 50%) rotate(360deg);
     }
 }
