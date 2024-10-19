@@ -182,12 +182,15 @@
     }
 
     .main_banner .container .content {
-        height: 640px;
+        height: 320px;
         align-content: center;
         padding-top: 171px;
     }
 
     /* about section design start  */
+    .about{
+        margin-top: 156px;
+    }
     .about .hading h2 {
         margin-top: 20px;
     }
@@ -214,6 +217,10 @@
         margin-top: -16px;
   
     }
+    .about .container .main_about .right_side {
+        padding-left: 0  ;
+    }
+ 
 
 
     /* education section design start  */
@@ -248,6 +255,9 @@
     }
     .main_footer .container .footer .box-3{
         margin-top: 30px;
+    }
+    .navbar-toggler{
+        width: 57px;
     }
 }
 
